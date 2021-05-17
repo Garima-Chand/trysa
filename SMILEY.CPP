@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<graphics.h>
+#include<conio.h>
+int main()
+{ int gd =DETECT,gm,i,j;
+  initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+  cout<<'\n'<<'\n'<<"                     SMILEY      ";
+
+  setcolor(YELLOW);
+  circle(300,300,150);
+  setfillstyle(SOLID_FILL,YELLOW);
+  floodfill(300,300,YELLOW);
+  setcolor(BLACK);
+  setfillstyle(SOLID_FILL,BLACK);
+  circle(345,275,25);
+  floodfill(345,275,BLACK);
+  circle(245,275,25);
+  floodfill(245,275,BLACK);
+  line(260,350,340,350);
+  arc(300,350,180,360,40);
+  floodfill(270,360,BLACK);
+
+  getch();
+  closegraph();
+  return 0;
+ }
